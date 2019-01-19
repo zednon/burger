@@ -1,8 +1,13 @@
-Create a burgers table with these fields:
 
 
-id: an auto incrementing int that serves as the primary key.
+DROP DATABASE IF Exists burgers_db;
+CREATE database burgers_db;
 
-burger_name: a string.
+USE burgers_db;
 
-devoured: a boolean.
+CREATE TABLE burgers(
+id int NOT NULL AUTO_INCREMENT,
+burger_name varchar(50) not null,
+davoured BOOLEAN(true) not null,
+	PRIMARY KEY (id)
+)
